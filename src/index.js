@@ -146,7 +146,7 @@ const iview = {
 };
 
 // 自定义代码
-const viewshareui = {
+const viewshare = {
     Button,
     Checkbox,
     CheckboxGroup: Checkbox.Group,
@@ -179,7 +179,7 @@ const install = function(Vue, opts = {}) {
     // locale.use(opts.locale);
     // locale.i18n(opts.i18n);
 
-    Object.keys(viewshareui).forEach(key => {
+    Object.keys(viewshare).forEach(key => {
         Vue.component(key, iview[key]);
     });
 
@@ -202,7 +202,7 @@ const API = {
     install,
     // Circle,
     // Switch,
-    viewshareui,
+    viewshare,
 };
 
 // API.lang = (code) => {

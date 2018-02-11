@@ -13,8 +13,8 @@ module.exports = merge(webpackBaseConfig, {
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
-        filename: 'viewshareui.js',
-        library: 'viewshareui',
+        filename: 'viewshare.js',
+        library: 'viewshare',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },

@@ -1,15 +1,15 @@
 {
   "name": "viewshare",
-  "version": "2.8.18",
+  "version": "2.8.20",
   "title": "vsui",
   "description": "component library built on vue.js",
-  "homepage": "https://github.com/ViewshareTech/viewshareui",
+  "homepage": "https://github.com/ViewshareTech/viewshare",
   "keywords": [
-    "viewshareui",   
+    "viewshare",   
     "vue",
     "components"
   ],
-  "main": "dist/viewshareui.js",
+  "main": "dist/viewshare.js",
   "files": [
     "dist",
     "src"
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ViewshareTech/viewshareui"
+    "url": "https://github.com/ViewshareTech/viewshare"
   },
   "author": "ViewshareTech",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ViewshareTech/viewshareui/issues"
+    "url": "https://github.com/ViewshareTech/viewshare/issues"
   },
   "dependencies": {
     "async-validator": "^1.8.2",

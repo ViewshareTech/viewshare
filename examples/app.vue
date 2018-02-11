@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="title">
-            viewshareui
+            viewshare
             <span class="sub-title">be the best</span>
         </div>
         <div class="item">
