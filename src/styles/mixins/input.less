@@ -8,16 +8,17 @@
 .active(@color: @input-hover-border-color) {
     border-color: tint(@color, 20%);
     outline: 0;
-    box-shadow: 0 0 0 2px fade(@color, 20%);
+    // box-shadow: 0 0 0 2px fade(@color, 20%);
 }
 .active-error() {
     border-color: @error-color;
     outline: 0;
-    box-shadow: 0 0 0 2px fade(@error-color, 20%);
+    // box-shadow: 0 0 0 2px fade(@error-color, 20%);
 }
 
 .disabled() {
-    background-color: @input-disabled-bg;
+    // background-color: @input-disabled-bg;
+    border: @vs-border-color;
     opacity: 1;
     cursor: @cursor-disabled;
     color: #ccc;
@@ -50,9 +51,10 @@
     font-size: @vs-input-font-size--default;
     border-radius: @vs-input-border-radius--default;
     padding: @vs-input-padding--default;
-    box-shadow: @vs-input-shadow;
+    // box-shadow: @vs-input-shadow;
+    border: @vs-border-color;
     color: @vs-input-color--default;
-    background-color: @vs-input-bg--default;
+    // background-color: @vs-input-bg--default;
     background-image: none;
     position: relative;
     cursor: text;
@@ -61,12 +63,12 @@
     
     &:hover {
         color: @vs-input-color--hover;
-        background-color: @vs-input-bg--hover;
+        // background-color: @vs-input-bg--hover;
     }
     
     &:focus {
         color: @vs-input-color--default;
-        background-color: @vs-input-bg--active;
+        // background-color: @vs-input-bg--active;
     }
 
     &[disabled],
@@ -74,6 +76,10 @@
         cursor: not-allowed;
         color: @vs-input-color--disabled;
         background-color: @vs-input-bg--disabled;
+        border: @vs-border-disable-color;
+    }
+    &[disabled]::placeholder{
+        color: @vs-input-color--disabled;
     }
 
     // Reset height for textarea
@@ -250,11 +256,11 @@
     &-prepend,
     &-append
     {
-        background-color: #fff;
+        // background-color: #fff;
         border: 1px solid @error-color;
         .@{css-prefix}select {
             &-selection {
-                background-color: inherit;
+                // background-color: inherit;
                 border: 1px solid transparent;
             }
         }

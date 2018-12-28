@@ -375,7 +375,7 @@
             padding-left: 50px;
             font-size: 40px;
             border-bottom: 1px solid #eee;
-            color: #36a16f;
+            color: #75C73B;
             background-color: #fff;
             z-index: 99;
             .sub-title {

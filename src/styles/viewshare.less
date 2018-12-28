@@ -1,15 +1,21 @@
 // Input
-@vs-input-height--small           : 30px;
-@vs-input-height--default         : 34px;
-@vs-input-height--large           : 38px;
+// @vs-input-height--small           : 30px;
+// @vs-input-height--default         : 34px;
+// @vs-input-height--large           : 38px;
+@vs-input-height--small           : 32px;
+@vs-input-height--default         : 36px;
+@vs-input-height--large           : 40px;
 
 @vs-input-font-size--small        : 14px;
 @vs-input-font-size--default      : 15px;
 @vs-input-font-size--large        : 16px;
 
-@vs-input-border-radius--small    : 14px;
-@vs-input-border-radius--default  : 16px;
-@vs-input-border-radius--large    : 20px;
+// @vs-input-border-radius--small    : 14px;
+// @vs-input-border-radius--default  : 16px;
+// @vs-input-border-radius--large    : 20px;
+@vs-input-border-radius--small    : 10px;
+@vs-input-border-radius--default  : 10px;
+@vs-input-border-radius--large    : 10px;
 
 @vs-input-color--placeholder      : #d1c492;
 @vs-input-color--default          : #99601c;
@@ -27,6 +33,8 @@
 @vs-input-bg--disabled            : #f3f3f3;
 @vs-input-bg--error               : rgb(255, 255, 255);
 
+@vs-border-color                  : 1px solid #E0CFBA;
+@vs-border-disable-color          : 1px solid #ccc;
 @vs-input-shadow                  : 0px 2px 1px 0px rgba(255, 255, 255, 0.004),inset 0px 2px 1px 0px rgba(79, 72, 42, 0.23),inset 0px 0px 2px 0px rgba(79, 72, 42, 0.23);
 
 // Button
@@ -40,25 +48,41 @@
 @vs-button-height--default         : 34px;
 @vs-button-height--large           : 38px;
 
-@vs-button-border-radius--small    : 30px;
-@vs-button-border-radius--default  : 34px;
-@vs-button-border-radius--large    : 38px;
+// @vs-button-border-radius--small    : 30px;
+// @vs-button-border-radius--default  : 34px;
+// @vs-button-border-radius--large    : 38px;
+@vs-button-border-radius--small    : 10px;
+@vs-button-border-radius--default  : 10px;
+@vs-button-border-radius--large    : 10px;
 
 @vs-button-padding--small          : 0 14px;
 @vs-button-padding--default        : 0 16px;
 @vs-button-padding--large          : 0 18px;
 
+// .vs-button--default() {
+//   background-image: linear-gradient( -90deg, rgb(124,224,150) 0%, rgb(22,153,80) 100%);
+//   box-shadow: 0px 2px 1px 0px rgba(113,105,74,0.19), inset 0px -2px 1px 0px rgba(0,0,0,0.14), inset 0px 2px 1px 0px rgba(255,255,255,0.19);
+// }
 .vs-button--default() {
-  background-image: linear-gradient( -90deg, rgb(124,224,150) 0%, rgb(22,153,80) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(113,105,74,0.19), inset 0px -2px 1px 0px rgba(0,0,0,0.14), inset 0px 2px 1px 0px rgba(255,255,255,0.19);
+  background: #75C73B;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20), inset 0 -1px 2px 0 rgba(95,95,95,0.40), inset 0 1px 2px 0 rgba(255,255,255,0.50);
 }
+
+// .vs-button--hover() {
+//   background-image: linear-gradient( -90deg, rgb(159,237,179) 0%, rgb(62,201,124) 100%);
+//   box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(102, 48, 48, 0.19);
+// }
 .vs-button--hover() {
-  background-image: linear-gradient( -90deg, rgb(159,237,179) 0%, rgb(62,201,124) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+  background: rgba(117, 199, 59, 0.7);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20), inset 0 -1px 2px 0 rgba(95,95,95,0.40), inset 0 1px 2px 0 rgba(255,255,255,0.50);
 }
+// .vs-button--active() {
+//   background-image: linear-gradient( -90deg, rgb(102,198,127) 0%, rgb(19,138,72) 100%);
+//   box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+// }
 .vs-button--active() {
-  background-image: linear-gradient( -90deg, rgb(102,198,127) 0%, rgb(19,138,72) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+  background: #62B12B;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20), inset 0 -1px 2px 0 rgba(95,95,95,0.40), inset 0 1px 2px 0 rgba(255,255,255,0.50);
 }
 
 .vs-button-primary--default() {
@@ -68,37 +92,42 @@
 }
 .vs-button-primary--hover() {
   background-image: none;
+  background-color: rgb(205, 139, 62);
+  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
   opacity: .8;
 }
 .vs-button-primary--active() {
   background-image: none;
+  background-color: rgb(205, 139, 62);
+  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
   opacity: 1;
 }
 
 .vs-button-ghost--default() {
   background-image: none;
-  color: #269856;
-  border: 1px solid rgb(38, 152, 86);
+  color: #75C73B;
+  border: 1px solid rgb(117, 199, 59);
   background-color: rgba(0,0,0,0);
-  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+  box-shadow: 0px 1px 2px 0px rgba(117, 199, 59, 0.65);
 }
 .vs-button-ghost--hover() {
   background-image: none;
-  background-color: rgb(227, 255, 232);
-  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+  background-color: rgba(117, 199, 59, 0.1);
+  box-shadow: 0px 1px 2px 0px rgba(117, 199, 59, 0.65);
 }
 .vs-button-ghost--active() {
   background-image: none;
-  background-color: rgb(188, 255, 216);
-  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+  background-color: rgba(117, 199, 59, 0.3);
+  box-shadow: 0px 1px 2px 0px rgba(117, 199, 59, 0.65);
 }
 
 .vs-button--disabled() {
   color: #ffffff;
   border: none;
   opacity: .7;
-  background-image: linear-gradient( -90deg, rgb(189,189,189) 1%, rgb(130,130,130) 100%);
-  box-shadow: inset 0px -2px 1px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 252, 238, 0.3);
+  // background-image: linear-gradient( -90deg, rgb(189,189,189) 1%, rgb(130,130,130) 100%);
+  background-color: #ccc;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20), inset 0 -1px 2px 0 rgba(95,95,95,0.40), inset 0 1px 2px 0 rgba(255,255,255,0.50);
 }
 
 // Datepicker
@@ -115,7 +144,8 @@
 @vs-dropdown-bg                  : #ffffff;
 @vs-dropdown-bg--active          : #ffefcf;
 @vs-dropdown-color--default      : #99601c;
-@vs-dropdown-color--hover        : #e6a75d;
+// @vs-dropdown-color--hover        : #e6a75d;
+@vs-dropdown-color--hover        : #ff9902;
 @vs-dropdown-border-radius       : 10px;
 @vs-dropdown-height              : 30px;
 @vs-dropdown-shadow              : 0px 1px 6px 0px #bbbbbb;
@@ -123,14 +153,14 @@
 // Checkbox
 @vs-checkbox-border-radius         : 4px;
 @vs-checkbox-bg                    : rgba(0, 0, 0, 0);
-@vs-checkbox-border-color          : #1f9e55;
-@vs-checkbox-border-color--hover   : #3acc78;
+@vs-checkbox-border-color          : #75C73B;
+@vs-checkbox-border-color--hover   : rgba(117,199,59,0.5);
 
 // Radio
 @vs-radio-border-radius             : 50%;
 @vs-radio-bg                        : rgba(0, 0, 0, 0);
-@vs-radio-border-color              : #1f9e55;
-@vs-radio-border-color--hover       : #3acc78;
+@vs-radio-border-color              : #75C73B;
+@vs-radio-border-color--hover       : rgba(117,199,59,0.5);
 
 // Form
 @vs-form-font-size                 : 16px;
@@ -148,7 +178,8 @@
 @vs-modal-footer-align              : center;
 
 .vs-modal-header-bg() {
-  background-image: linear-gradient( -90deg, rgb(231,156,70) 1%, rgb(170,115,51) 100%);
+  // background-image: linear-gradient( -90deg, rgb(231,156,70) 1%, rgb(170,115,51) 100%);
+  background-image: linear-gradient(-180deg, #E99D46 0%, #AA7334 100%);
 }                 
 .vs-modal-body-shadow(){
   box-shadow: 0px 2px 9.5px 0.5px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14);
@@ -160,8 +191,9 @@
 
 // Select
 @vs-select-bg                       : #ffffff;
-@vs-select-border-color             : rgb(255, 167, 68);
-@vs-select-shadow                   : 0px 1px 3px 0px rgba(148, 140, 98, 0.72),inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25),inset 0px -2px 0px 0px rgba(255, 255, 255, 0.28);
+// @vs-select-border-color             : rgb(255, 167, 68);
+@vs-select-border-color             : #E0CFBA;
+// @vs-select-shadow                   : 0px 1px 3px 0px rgba(148, 140, 98, 0.72),inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25),inset 0px -2px 0px 0px rgba(255, 255, 255, 0.28);
 
 @vs-select-padding--small           : 0 30px 0 14px;
 @vs-select-padding--default         : 0 30px 0 16px;
