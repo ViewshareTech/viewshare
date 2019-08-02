@@ -172,6 +172,7 @@ const viewshare = {
     Cascader,
     Step: Steps.Step,
     Steps,
+    TimePicker,
 }
 
 const install = function(Vue, opts = {}) {
